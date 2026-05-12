@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="sentinel_robot">
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.4 0.3 0.15"/>
+            </geometry>
+            <material name="gray">
+                <color rgba="0.5 0.5 0.5 1"/>
+            </material>
+        </visual>
+    </link>
+
+    <link name="camera_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.03" length="0.05"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0 0 0.8 1"/>
+            </material>
+        </visual>
+    </link>
+
+    <link name="lidar_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.04" length="0.03"/>
+            </geometry>
+            <material name="green">
+                <color rgba="0 0.8 0 1"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="camera_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="camera_link"/>
+        <origin xyz="0.2 0 0.15" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar_link"/>
+        <origin xyz="0 0 0.18" rpy="0 0 0"/>
+    </joint>
+
+</robot>
+  

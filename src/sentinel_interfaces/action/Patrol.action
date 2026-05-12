@@ -1,0 +1,12 @@
+# Goal
+float32[] waypoints_x
+float32[] waypoints_y
+float32 speed
+---
+# Result
+bool success
+string message
+---
+# Feedback
+int32 current_waypoint
+float32 progress_percent

@@ -1,0 +1,11 @@
+mission_name: session_10_final_test
+home:
+  name: dock
+  position: [0.0, 0.0]
+inspection_points:
+  - name: red_shelf
+    position: [1.0, 0.5]
+  - name: blue_shelf
+    position: [2.0, -0.5]
+  - name: yellow_shelf
+    position: [1.5, 1.5]

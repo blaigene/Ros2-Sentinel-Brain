@@ -1,0 +1,8 @@
+# Request: What the client sends
+string description
+string priority
+int32 sector_id
+---
+# Response: What the server sends back
+bool success
+string incident_id
