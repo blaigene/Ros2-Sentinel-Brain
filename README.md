@@ -1,4 +1,4 @@
-# Sentinel Brain: Autonomous Mission Control System 🤖⚡
+# Sentinel Brain: Autonomous Mission Control System 🤖
 
 ![ROS2](https://img.shields.io/badge/ROS2-Humble-22314E?logo=ros)
 ![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python)
@@ -54,12 +54,14 @@ git clone [https://github.com/YOUR_USERNAME/sentinel_brain.git](https://github.c
 cd ~/ros2_ws
 colcon build --packages-select sentinel_brain sentinel_interfaces
 source install/setup.bash
+```
 
 ### Launching the System
 Launch the complete autonomous ecosystem (Mission Control, Action Server, and Status Simulation) with a single command:
 
 ```bash
 ros2 launch sentinel_brain session10_mission.launch.py
+```
 
 ### Expected Output
 
